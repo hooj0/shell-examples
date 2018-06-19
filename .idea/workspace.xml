@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="144c10df-3120-43f0-b312-40b4770ff659" name="Default" comment="" />
+    <list default="true" id="144c10df-3120-43f0-b312-40b4770ff659" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09_samples_system/sys_uname.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_samples_sys_job/sys_top.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_samples_sys_usr/sys_uptime.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_samples_sys_usr/sys_w.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_samples_sys_usr/sys_whoais.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_samples_sys_net/sys_scp.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_samples_sys_net/sys_ssh.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_samples_sys_net/sys_wget.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_samples_sys_net/sys_whois.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_samples_sys_disk/sys_quota.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_samples_process/process_&amp;.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_samples_process/process_kill.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_samples_process/process_killall.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_samples_process/process_nohup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_bg.sh" beforeDir="false" afterPath="$PROJECT_DIR$/10_samples_sys_job/sys_bg.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_df.sh" beforeDir="false" afterPath="$PROJECT_DIR$/13_samples_sys_disk/sys_df.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_dig.sh" beforeDir="false" afterPath="$PROJECT_DIR$/12_samples_sys_net/sys_dig.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_du.sh" beforeDir="false" afterPath="$PROJECT_DIR$/13_samples_sys_disk/sys_du.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_fg.sh" beforeDir="false" afterPath="$PROJECT_DIR$/10_samples_sys_job/sys_fg.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_finger.sh" beforeDir="false" afterPath="$PROJECT_DIR$/11_samples_sys_usr/sys_finger.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_jobs.sh" beforeDir="false" afterPath="$PROJECT_DIR$/10_samples_sys_job/sys_jobs.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_last.sh" beforeDir="false" afterPath="$PROJECT_DIR$/11_samples_sys_usr/sys_last.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_passwd.sh" beforeDir="false" afterPath="$PROJECT_DIR$/11_samples_sys_usr/sys_passwd.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_ping.sh" beforeDir="false" afterPath="$PROJECT_DIR$/12_samples_sys_net/sys_ping.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_ps.sh" beforeDir="false" afterPath="$PROJECT_DIR$/10_samples_sys_job/sys_ps.sh" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,17 +41,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sys_dig.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/09_samples_system/sys_dig.sh">
+      <file leaf-file-name="sys_df.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/13_samples_sys_disk/sys_df.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="45">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="process_kill.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/14_samples_process/process_kill.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="process_killall.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/14_samples_process/process_killall.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="process_&amp;.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/14_samples_process/process_&amp;.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="process_nohup.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/14_samples_process/process_nohup.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sys_uname.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/09_samples_system/sys_uname.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sys_date.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/09_samples_system/sys_date.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sys_cal.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/09_samples_system/sys_cal.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="sys_du.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/09_samples_system/sys_du.sh">
+        <entry file="file://$PROJECT_DIR$/13_samples_sys_disk/sys_du.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
@@ -30,85 +122,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sys_fg.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/09_samples_system/sys_fg.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sys_finger.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/09_samples_system/sys_finger.sh">
+      <file leaf-file-name="sys_quota.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/13_samples_sys_disk/sys_quota.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sys_jobs.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/09_samples_system/sys_jobs.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sys_last.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/09_samples_system/sys_last.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sys_man.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/09_samples_system/sys_man.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sys_passwd.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/09_samples_system/sys_passwd.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sys_ping.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/09_samples_system/sys_ping.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sys_ps.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/09_samples_system/sys_ps.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+              <caret line="14" column="5" selection-start-line="14" selection-end-line="14" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/02_samples_file/file_cat.sh" />
-        <option value="$PROJECT_DIR$/02_samples_file/file_chown.sh" />
         <option value="$PROJECT_DIR$/01_samples_basic/basic_whereis.sh" />
         <option value="$PROJECT_DIR$/01_samples_basic/basic_which.sh" />
         <option value="$PROJECT_DIR$/01_samples_basic/basic_export.sh" />
@@ -145,6 +175,21 @@
         <option value="$PROJECT_DIR$/09_samples_system/sys_passwd.sh" />
         <option value="$PROJECT_DIR$/09_samples_system/sys_ping.sh" />
         <option value="$PROJECT_DIR$/09_samples_system/sys_ps.sh" />
+        <option value="$PROJECT_DIR$/09_samples_system/sys_quota.sh" />
+        <option value="$PROJECT_DIR$/09_samples_system/sys_scp.sh" />
+        <option value="$PROJECT_DIR$/09_samples_system/sys_uname.sh" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/09_samples_system/sys_w.sh" />
+        <option value="$PROJECT_DIR$/09_samples_system/sys_uptime.sh" />
+        <option value="$PROJECT_DIR$/09_samples_system/sys_top.sh" />
+        <option value="$PROJECT_DIR$/09_samples_system/sys_ssh.sh" />
+        <option value="$PROJECT_DIR$/09_samples_system/sys_wget.sh" />
+        <option value="$PROJECT_DIR$/09_samples_system/sys_whoais.sh" />
+        <option value="$PROJECT_DIR$/09_samples_system/sys_whois.sh" />
+        <option value="$PROJECT_DIR$/14_samples_process/process_kill.sh" />
+        <option value="$PROJECT_DIR$/14_samples_process/process_killall.sh" />
+        <option value="$PROJECT_DIR$/14_samples_process/process_&amp;.sh" />
+        <option value="$PROJECT_DIR$/14_samples_process/process_nohup.sh" />
       </list>
     </option>
   </component>
@@ -163,12 +208,30 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="shell" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shell-examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shell" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shell-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="14_samples_process" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -180,22 +243,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="shell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shell_examples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shell" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shell_examples" type="462c0819:PsiDirectoryNode" />
-              <item name="09_samples_system" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,11 +259,18 @@
     <property name="settings.editor.selected.configurable" value="ics" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work_private\shell-examples\12_samples_sys_net" />
+      <recent name="D:\work_private\shell-examples\13_samples_sys_storage" />
+      <recent name="D:\work_private\shell-examples\11_samples_sys_user" />
+      <recent name="D:\work_private\shell-examples\10_samples_sys_job" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work_private\shell-examples\14_samples_process" />
+      <recent name="D:\work_private\shell-examples\09_samples_system" />
       <recent name="D:\private_workspace\shell_examples\09_samples_system" />
       <recent name="D:\private_workspace\shell_examples\08_samples_dir_nav" />
       <recent name="D:\private_workspace\shell_examples\08_samples_text" />
-      <recent name="D:\private_workspace\shell_examples\02_samples_file" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -304,11 +359,12 @@
       <workItem from="1529197953668" duration="939000" />
       <workItem from="1529198945147" duration="8285000" />
       <workItem from="1529306470359" duration="14482000" />
+      <workItem from="1529384639699" duration="3488000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23706000" />
+    <option name="totallyTimeSpent" value="27194000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -320,7 +376,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947917" weight="0.32165605" />
@@ -328,15 +384,13 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5005208" side_tool="true" weight="0.3598726" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3297062" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" visible="true" weight="0.36836517" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.36793694" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1921875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19166666" />
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
-      <window_info id="Learn" order="2" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -347,6 +401,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
+      <window_info id="Learn" order="2" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,100 +412,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/1.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_samples_file/file_cp.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_samples_file/file_diff.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_samples_file/file_cat.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_samples_basic/basic_whereis.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_samples_basic/basic_whatis.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="67" lean-forward="true" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_samples_basic/basic_which.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_samples_basic/basic_export.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_samples_file/file_chown.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_samples_file/file_cat.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_samples_file/file_chmod.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="41" column="67" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_samples_file/z.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_samples_file/file_cp.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_samples_file/file_diff.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/02_samples_file/z.txt" />
+    <entry file="file://$PROJECT_DIR$/02_samples_file/file_cp.sh" />
+    <entry file="file://$PROJECT_DIR$/02_samples_file/file_diff.sh" />
     <entry file="file://$PROJECT_DIR$/1.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -537,13 +502,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/08_samples_text/a.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/08_samples_text/a.sh" />
     <entry file="file://$PROJECT_DIR$/02_samples_text/text_uniq.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -551,13 +510,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/08_samples_text/Ha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/08_samples_text/Ha.java" />
     <entry file="file://$PROJECT_DIR$/02_samples_text/text_wc.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -572,73 +525,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_bg.sh">
+    <entry file="file://$PROJECT_DIR$/10_samples_sys_job/sys_jobs.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10_samples_sys_job/sys_bg.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_cal.sh">
+    <entry file="file://$PROJECT_DIR$/10_samples_sys_job/sys_fg.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_date.sh">
+    <entry file="file://$PROJECT_DIR$/11_samples_sys_usr/sys_passwd.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_df.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_dig.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_du.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_fg.sh">
+    <entry file="file://$PROJECT_DIR$/10_samples_sys_job/sys_ps.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_finger.sh">
+    <entry file="file://$PROJECT_DIR$/10_samples_sys_job/sys_top.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12_samples_sys_net/sys_wget.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11_samples_sys_usr/sys_finger.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_jobs.sh">
+    <entry file="file://$PROJECT_DIR$/11_samples_sys_usr/sys_last.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_last.sh">
+    <entry file="file://$PROJECT_DIR$/11_samples_sys_usr/sys_uptime.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="270">
+          <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11_samples_sys_usr/sys_w.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12_samples_sys_net/sys_ping.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12_samples_sys_net/sys_dig.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12_samples_sys_net/sys_scp.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12_samples_sys_net/sys_whois.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12_samples_sys_net/sys_ssh.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11_samples_sys_usr/sys_whoais.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -649,24 +665,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_passwd.sh">
+    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_uname.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_ping.sh">
+    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_date.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="270">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_ps.sh">
+    <entry file="file://$PROJECT_DIR$/09_samples_system/sys_cal.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="45">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13_samples_sys_disk/sys_quota.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="5" selection-start-line="14" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13_samples_sys_disk/sys_du.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13_samples_sys_disk/sys_df.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14_samples_process/process_kill.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14_samples_process/process_killall.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14_samples_process/process_&amp;.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/14_samples_process/process_nohup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
         </state>
       </provider>
     </entry>

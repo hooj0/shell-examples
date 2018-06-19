@@ -1,1 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
+### TextMate template
+*.tmproj
+*.tmproject
+.idea/vcs.xml
+**/vcs.xml
+*/vcs.xml
+vcs.xml
+
