@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="144c10df-3120-43f0-b312-40b4770ff659" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09_samples_system/sys_uname.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10_samples_sys_job/sys_top.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11_samples_sys_usr/sys_uptime.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11_samples_sys_usr/sys_w.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11_samples_sys_usr/sys_whoais.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_samples_sys_net/sys_scp.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_samples_sys_net/sys_ssh.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_samples_sys_net/sys_wget.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_samples_sys_net/sys_whois.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13_samples_sys_disk/sys_quota.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14_samples_process/process_&amp;.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14_samples_process/process_kill.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14_samples_process/process_killall.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14_samples_process/process_nohup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_bg.sh" beforeDir="false" afterPath="$PROJECT_DIR$/10_samples_sys_job/sys_bg.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_df.sh" beforeDir="false" afterPath="$PROJECT_DIR$/13_samples_sys_disk/sys_df.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_dig.sh" beforeDir="false" afterPath="$PROJECT_DIR$/12_samples_sys_net/sys_dig.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_du.sh" beforeDir="false" afterPath="$PROJECT_DIR$/13_samples_sys_disk/sys_du.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_fg.sh" beforeDir="false" afterPath="$PROJECT_DIR$/10_samples_sys_job/sys_fg.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_finger.sh" beforeDir="false" afterPath="$PROJECT_DIR$/11_samples_sys_usr/sys_finger.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_jobs.sh" beforeDir="false" afterPath="$PROJECT_DIR$/10_samples_sys_job/sys_jobs.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_last.sh" beforeDir="false" afterPath="$PROJECT_DIR$/11_samples_sys_usr/sys_last.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_passwd.sh" beforeDir="false" afterPath="$PROJECT_DIR$/11_samples_sys_usr/sys_passwd.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_ping.sh" beforeDir="false" afterPath="$PROJECT_DIR$/12_samples_sys_net/sys_ping.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_samples_system/sys_ps.sh" beforeDir="false" afterPath="$PROJECT_DIR$/10_samples_sys_job/sys_ps.sh" afterDir="false" />
-    </list>
+    <list default="true" id="144c10df-3120-43f0-b312-40b4770ff659" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -359,12 +330,12 @@
       <workItem from="1529197953668" duration="939000" />
       <workItem from="1529198945147" duration="8285000" />
       <workItem from="1529306470359" duration="14482000" />
-      <workItem from="1529384639699" duration="3488000" />
+      <workItem from="1529384639699" duration="4122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27194000" />
+    <option name="totallyTimeSpent" value="27828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,7 +348,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947917" weight="0.32165605" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
