@@ -1,0 +1,36 @@
+使用 ag 在源代码或数据文件里检索（grep -r 同样可以做到，但相比之下 ag 更加先进）。
+
+将 HTML 转为文本：lynx -dump -stdin。
+
+Markdown，HTML，以及所有文档格式之间的转换，试试 pandoc。
+
+当你要处理棘手的 XML 时候，xmlstarlet 算是上古时代流传下来的神器。
+
+使用 jq 处理 JSON。
+
+使用 shyaml 处理 YAML。
+
+要处理 Excel 或 CSV 文件的话，csvkit 提供了 in2csv，csvcut，csvjoin，csvgrep 等方便易用的工具。
+
+当你要处理 Amazon S3 相关的工作的时候，s3cmd 是一个很方便的工具而 s4cmd 的效率更高。
+Amazon 官方提供的 aws 以及 saws 是其他 AWS 相关工作的基础，值得学习。
+
+要进行一些复杂的计算，比如分组、逆序和一些其他的统计分析，可以考虑使用 datamash
+
+使用 repren 来批量重命名文件，或是在多个文件中搜索替换内容。
+
+根据 man 页面的描述，rsync 是一个快速且非常灵活的文件复制工具。
+它闻名于设备之间的文件同步，但其实它在本地情况下也同样有用。在安全设置允许下，
+用 rsync 代替 scp 可以实现文件续传，而不用重新从头开始。它同时也是删除大量文件的最快方法之一
+
+若要在复制文件时获取当前进度，可使用 pv，pycp，progress，rsync --progress。若所执行的复制为block块拷贝，可以使用 dd status=progress。
+
+使用 shuf 可以以行为单位来打乱文件的内容或从一个文件中随机选取多行。
+
+对于二进制文件，使用 hd，hexdump 或者 xxd 使其以十六进制显示，使用 bvi，hexedit 或者 biew 来进行二进制编辑。
+
+操作日期和时间表达式，可以用 dateutils 中的 dateadd、datediff、strptime 等工具。
+
+wireshark，tshark 和 ngrep 可用于复杂的网络调试
+
+关于更深层次的系统分析以及性能分析，看看 stap（SystemTap），perf，以及sysdig。
