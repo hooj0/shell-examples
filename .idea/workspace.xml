@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="144c10df-3120-43f0-b312-40b4770ff659" name="Default" comment="" />
+=======
     <list default="true" id="144c10df-3120-43f0-b312-40b4770ff659" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/00_samples_started/hot_key.sh" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/00_samples_started/package" afterDir="false" />
@@ -135,6 +138,7 @@
       <change beforePath="$PROJECT_DIR$/12_samples_sys_net/sys_ssh.sh" beforeDir="false" afterPath="$PROJECT_DIR$/12_samples_sys_net/sys_ssh.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/13_samples_sys_disk/sys_df.sh" beforeDir="false" afterPath="$PROJECT_DIR$/13_samples_sys_disk/sys_df.sh" afterDir="false" />
     </list>
+>>>>>>> 592f05a97545b827620a387d8f9ed518b2ff9cf5
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -418,14 +422,26 @@
       <workItem from="1529197953668" duration="939000" />
       <workItem from="1529198945147" duration="8285000" />
       <workItem from="1529306470359" duration="14482000" />
+<<<<<<< HEAD
       <workItem from="1529384639699" duration="3488000" />
       <workItem from="1529743668272" duration="10394000" />
       <workItem from="1529764849142" duration="21797000" />
+=======
+      <workItem from="1529384639699" duration="4122000" />
+>>>>>>> a23b4ef4a20591b3473e3186fc94020dfc3a7769
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="67515000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="27828000" />
+=======
+    <option name="totallyTimeSpent" value="34003000" />
+>>>>>>> 592f05a97545b827620a387d8f9ed518b2ff9cf5
+>>>>>>> a23b4ef4a20591b3473e3186fc94020dfc3a7769
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -437,8 +453,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+=======
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
+>>>>>>> 592f05a97545b827620a387d8f9ed518b2ff9cf5
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947917" weight="0.32165605" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
