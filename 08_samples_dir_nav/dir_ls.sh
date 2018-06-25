@@ -18,6 +18,7 @@
 # -r	--reverse	        以相反的顺序来显示结果。通常，ls 命令的输出结果按照字母升序排列。
 # -S		                命令输出结果按照文件大小来排序。
 # -t		                按照修改时间来排序。
+# -i                        显示inode
 # -----------------------------------------------------------------
 
 
@@ -68,6 +69,18 @@ ls -la
 # -rwxr-xr-x 1 JojO 197121  680 六月 18 14:11 filesys_pwd.sh*
 
 
+
+# =================================================================
+#	 示例：{...} 自动化文本组合
+# =================================================================
+$ ls foo.{txt,pdf}
+ls: cannot access 'foo.txt': No such file or directory
+ls: cannot access 'foo.pdf': No such file or directory
+
+
+$ ls foo{,.bak}
+ls: cannot access 'foo': No such file or directory
+ls: cannot access 'foo.bak': No such file or directory
 
 
 
