@@ -1,4 +1,11 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-02
+# copyright by hoojo@2018
+
+
 
 # =================================================================
 #		mv —— 移动文件
@@ -78,6 +85,37 @@ mv file1 file2 dir1
 mv dir1 dir2
 
 
+
+# =================================================================
+# 进入练习场
+# =================================================================
+cd .playground
+
+
+# 移动或重命名
+
+# 重命名一个文件
+mv profile test
+
+# 移动 test 到 dir1
+mv test dir1
+
+# 移动 test 到 dir2
+mv dir1/test dir2
+
+# 移动 test 到 当前目录
+mv dir2/test .
+
+# 再次将 test 移动到 dir1
+mv test dir1
+
+# 将 dir1 移到 dir2
+# 注意：因为目录 dir2 已经存在，mv 命令会把 dir1 移动到 dir2 目录中。如果 dir2 不存在， mv 会把dir1重命名为 dir2。
+mv dir1 dir2
+
+# 还原
+mv dir2/dir1 .
+mv dir1/test .
 
 
 
