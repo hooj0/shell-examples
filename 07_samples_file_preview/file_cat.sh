@@ -1,4 +1,11 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-09
+# copyright by hoojo@2018
+
+
 
 # =================================================================
 #		cat——查看文件内容
