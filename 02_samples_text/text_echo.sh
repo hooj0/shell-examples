@@ -1,4 +1,11 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-10
+# copyright by hoojo@2018
+
+
 
 # =================================================================
 #		echo —— 输出命令之后的文本到标准输出或文件
