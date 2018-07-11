@@ -1,4 +1,11 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-08
+# copyright by hoojo@2018
+
+
 
 # =================================================================
 #		grep —— 在 文件中查找文本
