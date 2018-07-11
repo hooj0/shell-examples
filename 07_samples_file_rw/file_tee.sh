@@ -1,4 +1,11 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-07
+# copyright by hoojo@2018
+
+
 
 # =================================================================
 #		tee —— 从 Stdin 读取数据，并同时输出到 Stdout 和文件
