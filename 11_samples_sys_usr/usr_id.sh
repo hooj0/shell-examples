@@ -1,4 +1,12 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-12
+# copyright by hoojo@2018
+
+
+
 
 # =================================================================
 #		id —— 当前用户组的id身份信息
