@@ -1,4 +1,9 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-17
+# copyright by hoojo@2018
 
 # =================================================================
 #		sudo —— 以其他用户身份执行命令
