@@ -94,6 +94,7 @@ groupadd new_group
 # useradd -G group username
 # 添加用户geek 到 ftp 组
 useradd -G ftp geek
+
 # 然后分配密码
 passwd geek
 
@@ -125,11 +126,18 @@ useradd -m -g guest -G docker -s /bin/bash test
 useradd -m -g root -G ftp -s /bin/sh geek
 
 # 不设置默认组，使用系统默认组
-useradd -m -G wheel -s /bin/bash archie
+# 此命令会自动创建 archie 群组，并成为 user_foo 的默认登录群组。
+# umask 默认值是 002, 所以同一个默认群组的用户会有创建文件的写权限
+useradd -m -G wheel -s /bin/bash user_foo
+
+#要赋予一个群组某个目录的写权限，可以在父目录中设置
+chmod g+s our_shared_directory
 
 # 禁止登陆
 useradd -m -g root -G ftp -s /usr/bin/nologin task_user
 
+# 添加系统用户，为进程、守护进程分配不同的系统用户可以更安全的管控目录及文件的访问
+useradd -r -s /usr/bin/nologin username
 
 
 # output:
@@ -159,6 +167,9 @@ usermod -a -G sudo user
 #usermod -a -G group1,group2,group3 user_name
 usermod -a -G ftp,sudo,example geek
 
+# 追加用户到新的群组，但是一次只能加入一个组：
+gpasswd --add username group
+
 
 # output:
 #-------------------------------------------------------------------
@@ -177,6 +188,33 @@ usermod -g new_group user
 #
 
 
+
+# =================================================================
+#	 示例：更改用户信息
+# =================================================================
+# 更改用户登录名
+usermod -l newname oldname
+
+# 更改用户主目录，-m 选项会自动创建新目录并移动内容
+usermod -d /my/new/home -m username
+
+# 修改用户信息
+chfn ${USER}
+
+# output:
+#-------------------------------------------------------------------
+#
+
+
+# =================================================================
+#	 示例：删除用户信息
+# =================================================================
+# -r 选项表示一并删除用户主目录和邮件
+userdel -r username
+
+# output:
+#-------------------------------------------------------------------
+#
 
 
 read exits
