@@ -4,7 +4,7 @@
 # github:   https://github.com/hooj0
 # create:   2018-09-11
 # copyright by hoojo@2018
-# @changelog Aded system download file tools `wget` command example
+# @changelog system download file tools `wget` command example
 
 
 
