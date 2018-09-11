@@ -4,7 +4,7 @@
 # github:   https://github.com/hooj0
 # create:   2018-09-11
 # copyright by hoojo@2018
-# @changelog Aded system net tools `nc` command example
+# @changelog system net tools `nc` command example
 
 
 
