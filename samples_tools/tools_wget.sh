@@ -1,4 +1,12 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-09-11
+# copyright by hoojo@2018
+# @changelog Aded system download file tools `wget` command example
+
+
 
 # =================================================================
 #		wget —— 下载文件
@@ -10,7 +18,7 @@
 
 
 # =================================================================
-#	 示例1：
+#	 示例： 下载文件
 # =================================================================
 wget http://www.xxx.cn/readMe.txt
 
@@ -18,12 +26,17 @@ wget http://www.xxx.cn/readMe.txt
 
 # output:
 #-------------------------------------------------------------------
-# 
+#
 
 
 # =================================================================
-#	 示例2：
+#	 示例： 下载文件不存储
 # =================================================================
+wget http://www.xxx.cn/readMe.txt -O -
+# 设置超时
+wget http://www.xxx.cn/readMe.txt -T 3 -O -
+# 设置 user-agent
+wget -U mozilla http://www.xxx.cn/readMe.txt -T 3 -O -
 
 
 # output:
