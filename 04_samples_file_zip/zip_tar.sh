@@ -77,4 +77,18 @@ tar xf archive.tar foo/bar
 # 提取路径名中包含了通配符 dir-* 的文件
 tar xf ../foo.tar --wildcards 'home/me/foo/dir-\*/file-A'
 
+
+# =================================================================
+# 示例：tar 命令结合 find 命令 制作查找特定的文件集合
+# =================================================================
+# 找到foo目录中的文件名为 file-A 的文件或目录，然后打包
+find foo -name 'file-A' -exec tar rf foo.tar '{}' '+'
+
+find foo -name 'file-A' | tar cf - --files-from=- | gzip > foo.tgz
+
+# gzip = z
+find foo -name 'file-A' | tar czf foo.tgz -T -
+# bzip2 = j
+find foo -name 'file-A' | tar cjf foo.tbz -T -
+
 read exits
