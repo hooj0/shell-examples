@@ -1,4 +1,11 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-10-18
+# copyright by hoojo@2018
+
+
 
 # =================================================================
 #		du —— 输出某些文件或目录的硬盘使用情况
@@ -34,8 +41,22 @@ du -sh /opt/*
 
 
 
+# =================================================================
+# 示例：列出的输出结果按照路径名来排序
+# =================================================================
+# 把结果管道到 head 命令，把输出结果限制为前 10 行
+du -s /usr/share/* | head
 
+# 使用此 -nr 选项，我们产生了一个反向的数值排序，最大数值排列在第一位
+du -s /usr/share/* | sort -nr | head
 
+# output:
+#-------------------------------------------------------------------
+#252     /usr/share/aclocal
+#96      /usr/share/acpi-support
+#8       /usr/share/adduser
+#196     /usr/share/alacarte
+#344     /usr/share/alsa
 
 
 read exits
