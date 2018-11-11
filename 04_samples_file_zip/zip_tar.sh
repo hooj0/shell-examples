@@ -91,4 +91,11 @@ find foo -name 'file-A' | tar czf foo.tgz -T -
 # bzip2 = j
 find foo -name 'file-A' | tar cjf foo.tbz -T -
 
-read exits
+
+# =================================================================
+# 示例：解压到当前目录
+# =================================================================
+# gz 文件
+tar --strip-components 1 -xzf /usr/save/node-v4.2.1-linux-x64.tar.gz
+# xz文件
+tar --strip-components 1 -xf /usr/save/node-v4.2.1-linux-x64.tar.xz
