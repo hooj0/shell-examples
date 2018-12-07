@@ -1,4 +1,10 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-12-07
+# copyright by hoojo@2018
+
 
 # =================================================================
 #		egrep —— 匹配指定字符串
