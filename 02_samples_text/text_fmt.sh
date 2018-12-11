@@ -1,4 +1,11 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-12-07
+# copyright by hoojo@2018
+
+
 
 # =================================================================
 #		fmt —— 简单的文本格式化工具
