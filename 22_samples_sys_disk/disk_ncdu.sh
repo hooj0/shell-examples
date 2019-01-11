@@ -1,4 +1,13 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-17
+# copyright by hoojo@2018
+# @changelog Added sys disk `ncdu` shell command example
+
+
+
 
 # =================================================================
 #		ncdu —— 用来查看磁盘使用情况，它比寻常的命令，如 du -sh *，更节省时间
