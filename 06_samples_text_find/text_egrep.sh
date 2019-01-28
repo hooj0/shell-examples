@@ -4,6 +4,8 @@
 # github:   https://github.com/hooj0
 # create:   2018-12-07
 # copyright by hoojo@2018
+# @changelog Added text `egrep` shell command example
+
 
 
 # =================================================================
