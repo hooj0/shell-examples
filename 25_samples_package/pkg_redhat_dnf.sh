@@ -1,11 +1,14 @@
 #!/bin/sh
-
-# --------------------------------------------------------------------------
 # author:   hoojo
 # email:    hoojo_@126.com
 # github:   https://github.com/hooj0
 # create:   2020-11-06
 # copyright by hoojo@2020
+# @changelog Added package `dnf` shell command example
+
+
+
+
 # ==========================================================================
 #       dnf ———— red hat 系 linux 包管理器
 # ==========================================================================
