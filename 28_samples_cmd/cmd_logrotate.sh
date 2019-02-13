@@ -1,4 +1,13 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   ${DATE}
+# copyright by hoojo@2020
+# @changelog Added cmd `logrotate` shell command example
+
+
+
 
 # =================================================================
 #		logrotate —— 切换、压缩以及发送日志文件
