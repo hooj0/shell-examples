@@ -1,4 +1,13 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-17
+# copyright by hoojo@2018
+# @changelog Added sys disk `quota` shell command example
+
+
+
 
 # =================================================================
 #		quota —— 显示磁盘使用量和配额
