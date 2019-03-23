@@ -4,7 +4,7 @@
 # github:   https://github.com/hooj0
 # create:   2018-07-03
 # copyright by hoojo@2018
-
+# @changelog Added file curd `rm` shell command example
 
 
 
