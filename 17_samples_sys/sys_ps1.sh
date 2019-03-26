@@ -1,11 +1,13 @@
 #!/bin/sh
-
-# -----------------------------------------------------------------
 # author:   hoojo
 # email:    hoojo_@126.com
 # github:   https://github.com/hooj0
 # create:   2018-07-25
 # copyright by hoojo@2018
+# @changelog Added sys `ps1` shell command example
+
+
+
 # =================================================================
 #       自定制 shell 提示符
 # =================================================================
