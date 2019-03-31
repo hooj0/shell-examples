@@ -1,4 +1,12 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-09
+# copyright by hoojo@2018
+# @changelog Added file preview `more` shell command example
+
+
 
 # =================================================================
 #		more——输出一个文件的第一部分
