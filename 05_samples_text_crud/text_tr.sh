@@ -4,6 +4,7 @@
 # github:   https://github.com/hooj0
 # create:   2018-10-25
 # copyright by hoojo@2018
+# @changelog Added text `tr` shell command example
 
 
 
