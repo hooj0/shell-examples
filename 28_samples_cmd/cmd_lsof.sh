@@ -1,4 +1,13 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   ${DATE}
+# copyright by hoojo@2020
+# @changelog Added cmd `lsof` shell command example
+
+
+
 
 # =================================================================
 #		lsof —— 列出当前系统打开文件的工具以及查看端口信息
