@@ -1,4 +1,13 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   ${DATE}
+# copyright by hoojo@2020
+# @changelog Added cmd `timeout` shell command example
+
+
+
 
 # =================================================================
 #		timeout —— 在指定时长范围内执行命令，并在规定时间结束后停止进程
