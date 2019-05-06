@@ -1,4 +1,13 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   ${DATE}
+# copyright by hoojo@2020
+# @changelog Added cmd `watch` shell command example
+
+
+
 
 # =================================================================
 #		watch —— 重复运行同一个命令，展示结果并／或高亮有更改的部分
