@@ -1,4 +1,12 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-09
+# copyright by hoojo@2018
+# @changelog Added sys stat `sar` shell command example
+
+
 
 # =================================================================
 #		sar —— 当调试一些之前出现的问题的时候，sar 非常有用。它展示了 cpu、内存以及网络等的历史数据。
