@@ -4,6 +4,8 @@
 # github:   https://github.com/hooj0
 # create:   2018-07-06
 # copyright by hoojo@2018
+# @changelog Added io redirect `stdout` shell command example
+
 
 
 
