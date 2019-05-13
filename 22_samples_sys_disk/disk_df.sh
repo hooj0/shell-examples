@@ -1,4 +1,13 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-17
+# copyright by hoojo@2018
+# @changelog Added sys disk `df` shell command example
+
+
+
 
 # =================================================================
 #		df —— 输出磁盘使用统计数据
