@@ -1,4 +1,13 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   ${DATE}
+# copyright by hoojo@2020
+# @changelog Added cmd `apg` shell command example
+
+
+
 
 # =================================================================
 #		apg —— 随机生成密码
