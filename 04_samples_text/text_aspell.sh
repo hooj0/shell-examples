@@ -4,6 +4,7 @@
 # github:   https://github.com/hooj0
 # create:   2018-10-31
 # copyright by hoojo@2018
+# @changelog Added text `aspell` shell command example
 
 
 
@@ -11,7 +12,8 @@
 #       aspell —— 拼写检查
 # =================================================================
 # aspell，一款交互式的拼写检查器
-# 语法：aspell check textfile
+#
+#   语法：aspell check textfile
 # -----------------------------------------------------------------
 
 
