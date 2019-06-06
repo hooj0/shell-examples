@@ -1,4 +1,12 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-09
+# copyright by hoojo@2018
+# @changelog Added sys `sysctl` shell command example
+
+
 
 # =================================================================
 #		sysctl —— 在内核运行时动态地查看和修改内核的运行参数
