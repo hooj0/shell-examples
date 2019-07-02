@@ -1,4 +1,13 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-10-19
+# copyright by hoojo@2018
+# @changelog Added file `chattr` shell command example
+
+
+
 
 # =================================================================
 #		chattr —— 修改文件属性
