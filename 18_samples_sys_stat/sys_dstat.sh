@@ -1,4 +1,12 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-09
+# copyright by hoojo@2018
+# @changelog Added sys stat `dstat` shell command example
+
+
 
 # =================================================================
 #		dstat —— 对系统的现状有一个粗略的认识
