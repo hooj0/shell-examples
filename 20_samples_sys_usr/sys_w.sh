@@ -1,4 +1,12 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-20
+# copyright by hoojo@2018
+# @changelog Added sys usr `w` shell command example
+
+
 
 # =================================================================
 #		w —— 输出系统在线用户
