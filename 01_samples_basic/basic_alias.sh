@@ -2,9 +2,10 @@
 # author:   hoojo
 # email:    hoojo_@126.com
 # github:   https://github.com/hooj0
-# create date: 2018-07-05
+# create:   2018-07-05
 # copyright by hoojo @ 2018
 # @changelog Added basic `alias` shell command example
+
 
 
 
