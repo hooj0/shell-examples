@@ -4,7 +4,7 @@
 # github:   https://github.com/hooj0
 # create:   2018-10-23
 # copyright by hoojo@2018
-# @changelog Added file preview `tac` shell command example
+# @changelog Added file rw `join` shell command example
 
 
 
