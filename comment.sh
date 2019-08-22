@@ -4,7 +4,8 @@
 # github:   https://github.com/hooj0
 # create:   ${DATE}
 # copyright by hoojo@2020
-# @changelog Added ${PACKAGE_NAME} `${NAME}` shell example
+# @changelog Added template `code` example
+
 
 
 
