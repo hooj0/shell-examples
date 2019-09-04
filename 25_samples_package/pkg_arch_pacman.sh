@@ -1,11 +1,14 @@
 #!/bin/sh
-
-# --------------------------------------------------------------------------
 # author:   hoojo
 # email:    hoojo_@126.com
 # github:   https://github.com/hooj0
 # create:   2020-11-06
 # copyright by hoojo@2020
+# @changelog Added package `pacman` shell command example
+
+
+
+
 # ==========================================================================
 #       pacman ———— Arch Linux 上的软件包管理器
 # ==========================================================================
