@@ -4,6 +4,7 @@
 # github:   https://github.com/hooj0
 # create:   2018-11-29
 # copyright by hoojo@2018
+# @changelog Added text `shuf` shell command example
 
 
 
@@ -18,7 +19,7 @@
 
 
 # =================================================================
-#	 示例：准备数据
+# 示例：准备数据
 # =================================================================
 cat << EOF > example.txt
 1111
