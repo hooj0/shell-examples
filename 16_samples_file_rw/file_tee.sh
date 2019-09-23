@@ -4,7 +4,7 @@
 # github:   https://github.com/hooj0
 # create:   2018-07-07
 # copyright by hoojo@2018
-# @changelog Added file preview `tac` shell command example
+# @changelog Added file rw `tee` shell command example
 
 
 
