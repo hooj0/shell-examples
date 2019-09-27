@@ -1,4 +1,13 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-10-18
+# copyright by hoojo@2018
+# @changelog Added sys ram `vmstat` shell command example
+
+
+
 
 # =================================================================
 #		vmstat —— 系统内存状态
