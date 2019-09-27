@@ -4,6 +4,7 @@
 # github:   https://github.com/hooj0
 # create:   2018-07-09
 # copyright by hoojo@2018
+# @changelog Added file preview `tail` shell command example
 
 
 
