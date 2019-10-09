@@ -1,4 +1,12 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-10-19
+# copyright by hoojo@2018
+# @changelog Added text `wc` shell command example
+
+
 
 # =================================================================
 #		wc —— 输出文件中的行、单词、字符个数。
