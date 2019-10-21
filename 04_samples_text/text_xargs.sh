@@ -4,6 +4,8 @@
 # github:   https://github.com/hooj0
 # create:   2018-09-18
 # copyright by hoojo@2018
+# @changelog Added text `xargs` shell command example
+
 
 
 # =================================================================
