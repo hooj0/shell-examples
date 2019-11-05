@@ -1,12 +1,19 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   ${DATE}
+# copyright by hoojo@2020
+# @changelog Added cmd `lsxxx` shell command example
+
+
+
 
 # =================================================================
 #		
 # =================================================================
 #   lsblk：列出块设备信息：以树形展示你的磁盘以及磁盘分区信息
-#
 #   lshw，lscpu，lspci，lsusb 和 dmidecode：查看硬件信息，包括 CPU、BIOS、RAID、显卡、USB设备等
-#
 #   lsmod 和 modinfo：列出内核模块，并显示其细节
 # -----------------------------------------------------------------
 
