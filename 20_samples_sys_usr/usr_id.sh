@@ -4,7 +4,7 @@
 # github:   https://github.com/hooj0
 # create:   2018-07-12
 # copyright by hoojo@2018
-
+# @changelog Added sys usr `id` shell command example
 
 
 
