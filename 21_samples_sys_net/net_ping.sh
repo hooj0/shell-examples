@@ -4,6 +4,7 @@
 # github:   https://github.com/hooj0
 # create:   2018-08-14
 # copyright by hoojo@2018
+# @changelog Added sys net `ping` shell command example
 
 
 
