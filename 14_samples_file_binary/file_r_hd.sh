@@ -1,4 +1,12 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-09-12
+# copyright by hoojo@2018
+# @changelog Added file binary `hd` shell command example
+
+
 
 # =================================================================
 #		hd —— 预览二进制文件
