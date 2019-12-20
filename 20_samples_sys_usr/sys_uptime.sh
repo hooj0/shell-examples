@@ -1,4 +1,12 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-20
+# copyright by hoojo@2018
+# @changelog Added sys usr `uptime` shell command example
+
+
 
 # =================================================================
 #		uptime —— 输出服务器运行了多长时间以及有多少个用户登录
