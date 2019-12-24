@@ -4,6 +4,7 @@
 # github:   https://github.com/hooj0
 # create:   2018-12-11
 # copyright by hoojo@2018
+# @changelog Added text `fmt` shell command example
 
 
 
