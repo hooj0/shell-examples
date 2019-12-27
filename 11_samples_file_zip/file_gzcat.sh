@@ -1,4 +1,12 @@
 #!/bin/sh
+# author:   hoojo
+# email:    hoojo_@126.com
+# github:   https://github.com/hooj0
+# create:   2018-07-13
+# copyright by hoojo@2018
+# @changelog Added file `gzcat` shell command example
+
+
 
 # =================================================================
 #		gzcat——在不解压的情况下，查看 gzip 压缩过的文件
