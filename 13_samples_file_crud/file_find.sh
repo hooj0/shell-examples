@@ -4,6 +4,7 @@
 # github:   https://github.com/hooj0
 # create:   2018-09-12
 # copyright by hoojo@2018
+# @changelog Added file curd `find` shell command example
 
 
 # =================================================================
