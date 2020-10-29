@@ -99,5 +99,9 @@ find foo -name 'file-A' | tar cjf foo.tbz -T -
 tar --strip-components 1 -xzf /usr/save/node-v4.2.1-linux-x64.tar.gz
 # xz文件
 tar --strip-components 1 -xf /usr/save/node-v4.2.1-linux-x64.tar.xz
-
-tar xvJf  node-v6.10.1-linux-x64.tar.xz
+# tar.xz 文件
+tar xvJf /usr/save/node-v6.10.1-linux-x64.tar.xz
+# 两层压缩，外面是xz压缩方式，里层是tar压缩
+# 所以可以分两步实现解压
+xz -d /usr/save/node-v6.10.1-linux-x64.tar.xz
+tar -xvf /usr/save/node-v6.10.1-linux-x64.tar
