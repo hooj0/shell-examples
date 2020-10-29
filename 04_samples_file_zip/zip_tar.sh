@@ -99,3 +99,5 @@ find foo -name 'file-A' | tar cjf foo.tbz -T -
 tar --strip-components 1 -xzf /usr/save/node-v4.2.1-linux-x64.tar.gz
 # xz文件
 tar --strip-components 1 -xf /usr/save/node-v4.2.1-linux-x64.tar.xz
+
+tar xvJf  node-v6.10.1-linux-x64.tar.xz
