@@ -36,7 +36,7 @@
 #   在运行apt-get upgrade命令时加上-u选项很有用（即：apt-get -u upgrade)。
 #   这个选项让APT显示完整的可更新软件包列表。不加这个选项，你就只能盲目地更新。
 #   APT会下载每个软件包的最新更新版本，然后以合理的次序安装它们。
-#   注意在运行该命令前应先运行 apt-get update更新数据库，更新任何已安装的软件包。 [2]
+#   注意在运行该命令前应先运行 apt-get update更新数据库，更新任何已安装的软件包。
 # apt-get dist-upgrade
 #   将系统升级到新版本。
 # apt-cache search string
@@ -76,8 +76,24 @@
 
 
 # =================================================================
-# 示例：
+# 示例：经典常用命令
 # =================================================================
+# 安装一个应用
+sudo apt-get install XXX
+# 安装，遇到提示直接 yes
+sudo apt-get install -y XXX
+#
+sudo apt-get install -q XXX
+# 卸载删除应用
+sudo apt-get remove XXX
+#
+sudo apt-get purge XXX
+#
+sudo apt-get autoremove
+# 升级软件仓库列表
+sudo apt-get update
+# 升级应用
+sudo apt-get upgrade
 
 # output:
 #-------------------------------------------------------------------
