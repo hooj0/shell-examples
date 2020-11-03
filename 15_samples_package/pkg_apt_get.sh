@@ -75,44 +75,121 @@
 
 
 
-# =================================================================
+# ======================================================================================
 # 示例：经典常用命令
-# =================================================================
+# ======================================================================================
+# 用于查找新包
+sudo apt-cache
 # 安装一个应用
-sudo apt-get install XXX
+sudo apt-get install package_name
 # 安装，遇到提示直接 yes
-sudo apt-get install -y XXX
-#
-sudo apt-get install -q XXX
-# 卸载删除应用
-sudo apt-get remove XXX
-#
-sudo apt-get purge XXX
+sudo apt-get install -y package_name
+# 静默安装
+sudo apt-get install -q package_name
+# 安装新的软件包
+sudo apt-get install package_name
+sudo apt-get install package_1 package_2 package_3
+
+# 卸载删除应用，只删除包的二进制文件。它不会触及配置文件
+sudo apt-get remove package_name
+# 清除包以及配置文件
+# 如果“删除”特定软件并再次安装，系统将具有相同的配置文件。当然，再次安装时，系统会要求您覆盖现有的配置文件。
+# 当你搞砸了程序的配置时，清除特别有用。您希望从系统中完全擦除其痕迹，并且可能重新开始。
+sudo apt-get purge package_name
+
 #
 sudo apt-get autoremove
 # 升级软件仓库列表
 sudo apt-get update
-# 升级应用
+
+# 升级应用，不推荐使用
 sudo apt-get upgrade
-
-# output:
-#-------------------------------------------------------------------
-#
-
-
-# =================================================================
-# 示例：
-# =================================================================
+# 仅升级特定程序
+sudo apt-get upgrade package_name
 
 
 # output:
-#-------------------------------------------------------------------
+#---------------------------------------------------------------------------------------
 #
 
 
 
 
+# ======================================================================================
+# 示例：更新软件数据源
+# ======================================================================================
+# 更新的时候可以看到有三种情况：
+# 　 1）hit：包版本没有变化
+#    2）ign：包被忽略了，可能有各种原因，但不是错误信息。
+#    3）get：有一个新版本可用
+sudo apt-get update
 
 
+# 更新软件包数据库后，可以用下面的命令升级已安装的软件包
+# ---------------------------------------------------------------------------------------
+# 仅升级特定程序
+sudo apt-get upgrade package_name
+# 安装一个应用
+sudo apt-get install package_name
+
+# 获取 Ubuntu 代号
+lsb_release -a
+
+# codename 后面的就是我们自己的 Ubuntu 的代号:
+# ---------------------------------------------------------------------------------------
+# No LSB modules are available.
+# Distributor ID: Ubuntu
+# Description:    Ubuntu 16.04.7 LTS
+# Release:        16.04
+# Codename:       xenial
+
+
+# 编辑源，
+# 将自己的代号写入
+# ---------------------------------------------------------------------------------------
+# 阿里云源
+deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse
+##測試版源
+deb http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse
+# 源碼
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse
+##測試版源
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-proposed main restricted universe multiverse
+
+
+# 清华大学源
+deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse
+deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+##測試版源
+deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
+# 源碼
+deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial main restricted universe multiverse
+deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricted universe multiverse
+##測試版源
+deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-proposed main restricted universe multiverse
+
+
+
+
+# 修改源文件 sources.list
+# ---------------------------------------------------------------------------------------
+# 修改前备份，在终端中执行以下命令：
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bcakup
+
+# 打开 sources.list 文件，清空里面的内容，把上面我们编辑好的国内的源复制进去，保存后退出
+sudo gedit /etc/apt/sources.list
+
+# 更新软件列表和升级
+sudo apt-get update
 
 read exits
