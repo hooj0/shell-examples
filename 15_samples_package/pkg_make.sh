@@ -46,6 +46,7 @@
 # 查看系统中安装过的 python 版本
 ls -l /usr/bin | grep python
 
+
 # 一、先安装需要的包zlib1g, libffi
 # -----------------------------------------------------------------
 # 更新 软件源 metadata 列表
@@ -54,14 +55,16 @@ sudo apt-get update
 sudo apt-get install zlib1g-dev
 sudo apt-get install libffi-dev
 
+
 # 二、在ubuntu上创建/usr/local/python3.7的目录，将压缩包放到该目录
 # -----------------------------------------------------------------
 sudo mkdir -p /usr/local/python3.7
 
 # 把压缩包放进去
 cd /usr/local/python3.7
-sudo tar -zxvf Python-3.7.3.tgz
-cd Python-3.7.3
+sudo tar -zxvf Python-3.7.1.tgz
+cd Python-3.7.1
+
 
 # 三、安装
 # -----------------------------------------------------------------
@@ -78,13 +81,36 @@ cd Python-3.7.3
 # 库文件放在/usr/local/python3.7.1/lib，
 # 配置文件放在/usr/local/python3.7.1/include，
 # 其它的资源文件放在/usr/local/python3.7.1/share
-sudo ./configure --prefix=/usr/local/python3.7 # (设置python3.7.3的安装路径)
+sudo ./configure --prefix=/usr/local/python3.7 # (设置python3.7的安装路径)
 # 编译
 make
 # 测试
 make test
 # 并安装
 make install
+
+
+# 四、添加环境变量
+# -----------------------------------------------------------------
+PATH=$PATH:$HOME/bin:/usr/local/python3.7.1/bin
+
+
+# 五、更新python默认指向为python3.7
+# -----------------------------------------------------------------
+# 查看python命令指向
+ls -l /usr/bin | grep python
+
+# 删除原有链接
+rm /usr/bin/python
+
+# 建立新链接
+ln -s /usr/bin/python3.7 /usr/bin/python
+
+# 建立软连接
+mv /usr/bin/python /usr/bin/python.bak
+ln -s /usr/local/python3.7.1/bin/python3.7 /usr/bin/python
+mv /usr/bin/pip /usr/bin/pip.bak
+ln -s /usr/local/python3.7.1/bin/pip3 /usr/bin/pip
 
 
 # =================================================================
