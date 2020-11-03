@@ -43,32 +43,48 @@
 # =================================================================
 # 示例： 从源码编译安装 二进制 python
 # =================================================================
-# 一、先安装需要的包zlib1g,libffi
+# 查看系统中安装过的 python 版本
+ls -l /usr/bin | grep python
+
+# 一、先安装需要的包zlib1g, libffi
+# -----------------------------------------------------------------
 # 更新 软件源 metadata 列表
-apt-get update
+sudo apt-get update
 # 通过更新后的列表中选择安装 对应版本的软件
-apt-get install zlib1g-dev
-apt-get install libffi-dev
+sudo apt-get install zlib1g-dev
+sudo apt-get install libffi-dev
 
 # 二、在ubuntu上创建/usr/local/python3.7的目录，将压缩包放到该目录
-mkdir -p /usr/local/python3.7
+# -----------------------------------------------------------------
+sudo mkdir -p /usr/local/python3.7
 
 # 把压缩包放进去
 cd /usr/local/python3.7
-tar -zxvf Python-3.7.3.tgz
+sudo tar -zxvf Python-3.7.3.tgz
 cd Python-3.7.3
 
+# 三、安装
+# -----------------------------------------------------------------
 # 配置安装目录
-./configure --prefix=/usr/local/python3.7 # (设置python3.7.3的安装路径)
 
-# 编译 并安装
+# ./configure，
+# 则安装后可执行文件默认放在/usr/local/bin，
+# 库文件默认放在/usr/local/lib，
+# 配置文件默认放在/usr/local/include，
+# 其它的资源文件放在/usr/local/share
+
+# ./configure --prefix=/usr/local/python3.7
+# 则可执行文件放在/usr/local/python3.7.1/bin，
+# 库文件放在/usr/local/python3.7.1/lib，
+# 配置文件放在/usr/local/python3.7.1/include，
+# 其它的资源文件放在/usr/local/python3.7.1/share
+sudo ./configure --prefix=/usr/local/python3.7 # (设置python3.7.3的安装路径)
+# 编译
 make
+# 测试
+make test
+# 并安装
 make install
-
-
-# output:
-# ------------------------------------------------------------------
-# 
 
 
 # =================================================================
@@ -80,15 +96,6 @@ make install
 make
 # 安装
 make install
-
-# output:
-#-------------------------------------------------------------------
-#
-
-
-
-
-
 
 
 read exits
