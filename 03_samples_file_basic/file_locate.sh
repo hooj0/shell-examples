@@ -44,3 +44,13 @@ locate *.sh
 locate --regex 'bin/(bz|gz|zip)'
 
 
+# =================================================================
+#	 示例：查找 libpython3.7m.a 的文件
+# =================================================================
+locate libpython3.7m.a
+
+# output:
+#-------------------------------------------------------------------
+# /usr/local/python3.7/Python-3.7.1/libpython3.7m.a
+# /usr/local/python3.7/lib/libpython3.7m.a
+# /usr/local/python3.7/lib/python3.7/config-3.7m-x86_64-linux-gnu/libpython3.7m.a
