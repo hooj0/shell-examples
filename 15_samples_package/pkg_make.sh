@@ -84,6 +84,7 @@ cd Python-3.7.1
 sudo ./configure --prefix=/usr/local/python3.7.1 # (设置python3.7.1的安装路径)
 sudo ./configure --prefix=/usr/local/python3.7.1 --enable-shared
 sudo ./configure --prefix=/usr/local/python3.7.1 --enable-shared CFLAGS=-fPIC
+sudo ./configure  --enable-optimizations --with-ssl
 # 编译
 sudo make
 # 检查
