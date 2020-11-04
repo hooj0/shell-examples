@@ -80,6 +80,7 @@
 # ======================================================================================
 # 用于查找新包
 sudo apt-cache
+sudo apt-cache search package_name
 # 安装一个应用
 sudo apt-get install package_name
 # 安装，遇到提示直接 yes
