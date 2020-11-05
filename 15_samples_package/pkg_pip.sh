@@ -40,6 +40,13 @@
 #   清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
 #   中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/
 # --------------------------------------------------------------------------
+# vim ~/.pip/pip.conf
+#
+# [global]
+# index-url = http://mirrors.aliyun.com/pypi/simple/
+# [install]
+# trusted-host = mirrors.aliyun.com
+# --------------------------------------------------------------------------
 
 
 
@@ -47,9 +54,12 @@
 # 示例：安装 python-dateutil 软件包
 # ==========================================================================
 sudo pip install python-dateutil
-
 # 使用用户参数
 pip install --user python-dateutil
+# 升级安装 -U, --upgrade
+sudo pip install --upgrade python-dateutil
+# 安装不使用缓存
+sudo pip install --no-cache-dir python-dateutil
 
 # output:
 # --------------------------------------------------------------------------
@@ -213,6 +223,14 @@ sudo pip search sip -i http://pypi.douban.com/simple --trusted-host pypi.douban.
 #  pip cache remove <pattern>
 #  pip cache purge
 # ==========================================================================
+# 仅为此运行而无需使用缓存安装软件包。
+sudo pip install --no-cache-dir package
+# 将pip配置为不“全局”使用缓存（在所有命令中）
+sudo pip config set global.cache-dir false
+# 从pip的缓存中删除所有与matplotlib相关的wheel文件
+sudo pip cache remove matplotlib
+# 清除pip缓存中的所有文件
+sudo pip cache purge
 sudo pip cache list sip
 
 # output:
