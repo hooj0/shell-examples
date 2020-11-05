@@ -20,15 +20,25 @@
 #  freeze                      输出安装版本格式软件包
 #  list                        已安装软件包列表
 #  show                        显示有关已安装软件包的信息
-#  check                       Verify installed packages have compatible dependencies.
-#  config                      Manage local and global configuration.
-#  search                      Search PyPI for packages.
-#  cache                       Inspect and manage pip's wheel cache.
-#  wheel                       Build wheels from your requirements.
-#  hash                        Compute hashes of package archives.
-#  completion                  A helper command used for command completion.
-#  debug                       Show information useful for debugging.
+#  check                       验证安装的软件包和依赖软件包是否兼容
+#  config                      管理本地和全局配置
+#  search                      在PyPI中搜索软件包
+#  cache                       检查并管理pip的缓存
+#  wheel                       根据依赖进行构建
+#  hash                        软件包文件的哈希值
+#  completion                  用于命令的帮助程序命令
+#  debug                       显示对调试有用的信息
 #  help                        Show help for commands.
+# --------------------------------------------------------------------------
+# pip 源
+#   sudo pip install sip -i http://pypi.douban.com/simple
+#   sudo pip install sip -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+# --------------------------------------------------------------------------
+#   阿里云 http://mirrors.aliyun.com/pypi/simple/
+#   中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+#   豆瓣(douban) http://pypi.douban.com/simple/
+#   清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
+#   中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/
 # --------------------------------------------------------------------------
 
 
@@ -137,9 +147,73 @@ sudo pip show sip
 
 
 # ==========================================================================
-# 示例：
+# 示例：验证安装的软件包和依赖软件包是否兼容
 # ==========================================================================
+sudo pip check sip
 
+# output:
+# --------------------------------------------------------------------------
+# No broken requirements found.
+
+
+# ==========================================================================
+# 示例：软件包配置管理
+# --------------------------------------------------------------------------
+# Usage:
+#  pip config [<file-option>] list
+#  pip config [<file-option>] [--editor <editor-path>] edit
+#
+#  pip config [<file-option>] get name
+#  pip config [<file-option>] set name value
+#  pip config [<file-option>] unset name
+#  pip config [<file-option>] debug
+# ==========================================================================
+sudo pip config list
+
+# output:
+# --------------------------------------------------------------------------
+# global.index-url='http://mirrors.aliyun.com/pypi/simple/'
+# install.trusted-host='mirrors.aliyun.com'
+
+
+# ==========================================================================
+# 示例：在PyPI中搜索软件包
+# ==========================================================================
+# 出现ssl异常，不支持 https
+sudo pip search sip
+
+# output:
+# --------------------------------------------------------------------------
+#WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError("Can't connect to HTTPS URL because the SSL module is not available.")': /pypi
+
+# 上面出现ssl异常，不支持 https，设置 http
+sudo pip search sip -i http://pypi.org/pypi
+
+# 将此主机或host：端口对标记为受信任，即使它没有有效的HTTPS或任何HTTPS
+sudo pip search sip -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+# output:
+# --------------------------------------------------------------------------
+#PyQt5-sip (12.8.1)               - The sip module support for PyQt5
+#  INSTALLED: 12.8.1 (latest)
+#sip-models (0.1.2)               - Spectral induced polarization (SIP) models based on the Cole-Cole model
+#sip (5.4.0)                      - A Python bindings generator for C/C++ libraries
+#  INSTALLED: 5.4.0 (latest)
+#file-cache-sip (0.0.1)           - Simple File Cache based on pickle or json
+#django-sip-phonebook (1.0.15)    - Django based phonebook for Granstream telephones.
+
+
+# ==========================================================================
+# 示例：检查并管理pip的缓存
+# --------------------------------------------------------------------------
+# Usage:
+#  pip cache dir
+#  pip cache info
+#  pip cache list [<pattern>]
+#  pip cache remove <pattern>
+#  pip cache purge
+# ==========================================================================
+sudo pip cache list sip
 
 # output:
 # --------------------------------------------------------------------------
@@ -147,25 +221,14 @@ sudo pip show sip
 
 
 # ==========================================================================
-# 示例：
+# 示例：计算软件包的hash
 # ==========================================================================
-
+$ sudo pip hash /usr/local/python3.7/lib/python3.7/site-packages/sip-5.4.0.dist-info/WHEEL
 
 # output:
 # --------------------------------------------------------------------------
-#
-
-
-# ==========================================================================
-# 示例：
-# ==========================================================================
-
-
-# output:
-# --------------------------------------------------------------------------
-#
-
-
+#/usr/local/python3.7/lib/python3.7/site-packages/sip-5.4.0.dist-info/WHEEL:
+#--hash=sha256:7da05e38c54c53a7d7aa0af4fdff1ffd5408355ae65abd8fdf993ce224a405e7
 
 
 read exits
