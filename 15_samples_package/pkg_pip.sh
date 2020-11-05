@@ -227,15 +227,26 @@ sudo pip search sip -i http://pypi.douban.com/simple --trusted-host pypi.douban.
 sudo pip install --no-cache-dir package
 # 将pip配置为不“全局”使用缓存（在所有命令中）
 sudo pip config set global.cache-dir false
-# 从pip的缓存中删除所有与matplotlib相关的wheel文件
-sudo pip cache remove matplotlib
-# 清除pip缓存中的所有文件
-sudo pip cache purge
-sudo pip cache list sip
 
+# 从pip的缓存中删除所有与matplotlib相关的wheel文件
+pip cache remove matplotlib
+# 清除pip缓存中的所有文件
+pip cache purge
+# 缓存列表
+pip cache list
+# 缓存所在目录
+pip cache dir
 # output:
 # --------------------------------------------------------------------------
-#
+#/home/vagrant/.cache/pip
+
+# 查询 cache 信息
+pip cache info
+# output:
+# --------------------------------------------------------------------------
+#Location: /home/vagrant/.cache/pip/wheels
+#Size: 0 bytes
+#Number of wheels: 0
 
 
 # ==========================================================================
