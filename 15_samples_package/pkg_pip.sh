@@ -79,7 +79,6 @@ sudo pip uninstall qt-binder
 
 # output:
 # --------------------------------------------------------------------------
-# WARNING: The directory '/home/vagrant/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
 # Found existing installation: qt-binder 0.3
 # Uninstalling qt-binder-0.3:
 #  Would remove:
