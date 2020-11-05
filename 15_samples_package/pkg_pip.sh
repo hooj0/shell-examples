@@ -69,19 +69,102 @@ sudo pip uninstall qt-binder
 #  Successfully uninstalled qt-binder-0.3
 
 
+# ==========================================================================
+# 示例：已安装软件包列表
+# ==========================================================================
+sudo pip list
 
-$ sudo pip show sip
-WARNING: The directory '/home/vagrant/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
-Name: sip
-Version: 5.4.0
-Summary: A Python bindings generator for C/C++ libraries
-Home-page: https://www.riverbankcomputing.com/software/sip/
-Author: Riverbank Computing Limited
-Author-email: info@riverbankcomputing.com
-License: SIP
-Location: /usr/local/python3.7/lib/python3.7/site-packages
-Requires: toml, packaging
-Required-by: PyQt-builder
+# output:
+# --------------------------------------------------------------------------
+#Package        Version
+#-------------- -------
+#backports.lzma 0.0.14
+#install        1.3.4
+#msgpack        1.0.0
+#packaging      20.4
+#pip            20.2.4
+#pyface         7.1.0
+#pyparsing      2.4.7
+#setuptools     39.0.1
+#six            1.15.0
+#toml           0.10.2
+#traits         6.1.1
+#traitsui       7.1.0
+
+
+# ==========================================================================
+# 示例： 输出安装版本格式软件包
+# ==========================================================================
+sudo pip freeze
+
+# output:
+# --------------------------------------------------------------------------
+#backports.lzma==0.0.14
+#install==1.3.4
+#msgpack==1.0.0
+#packaging==20.4
+#pyface==7.1.0
+#pyparsing==2.4.7
+#PyQt-builder==1.5.0
+#PyQt5==5.15.1
+#PyQt5-sip==12.8.1
+#PyQtWebEngine==5.15.1
+#python-dateutil==2.8.1
+#sip==5.4.0
+#six==1.15.0
+#toml==0.10.2
+#traits==6.1.1
+#traitsui==7.1.0
+
+
+# ==========================================================================
+# 示例：显示sip安装包的详细信息
+# ==========================================================================
+sudo pip show sip
+
+# output:
+# --------------------------------------------------------------------------
+#Name: sip
+#Version: 5.4.0
+#Summary: A Python bindings generator for C/C++ libraries
+#Home-page: https://www.riverbankcomputing.com/software/sip/
+#Author: Riverbank Computing Limited
+#Author-email: info@riverbankcomputing.com
+#License: SIP
+#Location: /usr/local/python3.7/lib/python3.7/site-packages
+#Requires: toml, packaging
+#Required-by: PyQt-builder
+
+
+# ==========================================================================
+# 示例：
+# ==========================================================================
+
+
+# output:
+# --------------------------------------------------------------------------
+#
+
+
+# ==========================================================================
+# 示例：
+# ==========================================================================
+
+
+# output:
+# --------------------------------------------------------------------------
+#
+
+
+# ==========================================================================
+# 示例：
+# ==========================================================================
+
+
+# output:
+# --------------------------------------------------------------------------
+#
+
 
 
 
