@@ -16,9 +16,10 @@
 # -----------------------------------------------------------------
 # 包管理系统                 发行版 (部分列表)
 # -----------------------------------------------------------------
-# Debian Style (.deb) 	    Debian, Ubuntu, Xandros, Linspire
-# Red Hat Style (.rpm) 	    Fedora, CentOS, Red Hat Enterprise Linux,
+# Debian  系 (.deb) 	        Debian, Ubuntu, Xandros, Linspire
+# Red Hat 系 (.rpm) 	        Fedora, CentOS, Red Hat Enterprise Linux,
 #                           OpenSUSE, Mandriva, PCLinuxOS
+# Arch (.pkg.tar.gz)        Arch Linux
 # -----------------------------------------------------------------
 
 # -----------------------------------------------------------------
