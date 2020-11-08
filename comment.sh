@@ -2,9 +2,9 @@
 # author:   hoojo
 # email:    hoojo_@126.com
 # github:   https://github.com/hooj0
-# create:   2020-11-09
+# create:   ${DATE}
 # copyright by hoojo@2020
-# @changelog Added comment `template` code example
+# @changelog Added ${PACKAGE_NAME} `${NAME}` shell example
 
 
 
