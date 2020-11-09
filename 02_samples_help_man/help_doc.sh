@@ -1,12 +1,13 @@
 #!/bin/sh
-
-# --------------------------------------------------------------------------
 # author:   hoojo
 # email:    hoojo_@126.com
 # github:   https://github.com/hooj0
 # create:   2020-07-03
 # copyright by hoojo@2020
-# @changelog Added help `help` cmd shell example
+# @changelog Added help document `help` shell command example
+
+
+
 # ==========================================================================
 #       help —— 帮助文档手册
 # ==========================================================================
