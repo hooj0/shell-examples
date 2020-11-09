@@ -4,7 +4,7 @@
 # github:   https://github.com/hooj0
 # create date: 2018-11-12
 # copyright by hoojo@2018
-
+# @changelog Added shell started `vim` editor example
 
 
 # ==========================================================================
