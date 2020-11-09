@@ -10,6 +10,53 @@
 #       apt-get 包管理/应用程序管理器
 # =====================================================================================
 # 用于自动从互联网的软件仓库中搜索、安装、升级、卸载软件或操作系统
+# 官网包查找：
+#   https://packages.ubuntu.com/
+# -------------------------------------------------------------------------------------
+# apt-get --help
+#
+# apt 1.2.32ubuntu0.1 (amd64)
+#   用法： apt-get [选项] 命令
+#　　　 apt-get [选项] install|remove 软件包1 [软件包2 ...]
+#　　　 apt-get [选项] source 软件包1 [软件包2 ...]
+#
+# apt-get 是一个用于下载和安装软件包的简易命令行界面。
+# 最常用命令是 update 和 install。
+#
+# 命令：
+#   update - 取回更新的软件包列表信息
+#   upgrade - 进行一次升级
+#   install - 安装新的软件包(注：软件包名称是 libc6 而非 libc6.deb)
+#   remove - 卸载软件包
+#   autoremove - 卸载所有自动安装且不再使用的软件包
+#   purge - 卸载并清除软件包的配置
+#   source - 下载源码包文件
+#   build-dep - 为源码包配置所需的编译依赖关系
+#   dist-upgrade - 发布版升级，见 apt-get(8)
+#   dselect-upgrade - 根据 dselect 的选择来进行升级
+#   clean - 删除所有已下载的包文件
+#   autoclean - 删除已下载的旧包文件
+#   check - 核对以确认系统的依赖关系的完整性
+#   changelog - 下载指定软件包，并显示其changelog
+#   download - 下载指定的二进制包到当前目录
+#
+# 选项：
+#  -h  本帮助文档。
+#  -q  让输出可作为日志 - 不显示进度
+#  -qq 除了错误外，什么都不输出
+#  -d  仅仅下载 - 【不】安装或解开包文件
+#  -s  不作实际操作。只是依次模拟执行命令
+#  -y  对所有询问都回答是(Yes)，同时不作任何提示
+#  -f  当出现破损的依赖关系时，程序将尝试修正系统
+#  -m  当有包文件无法找到时，程序仍尝试继续执行
+#  -u  显示已升级的软件包列表
+#  -b  在下载完源码包后，编译生成相应的软件包
+#  -V  显示详尽的版本号
+#  -c=? 读取指定配置文件
+#  -o=? 设置任意指定的配置选项，例如 -o dir::cache=/tmp
+# 请查阅 apt-get(8)、sources.list(5) 和 apt.conf(5)的参考手册
+# 以获取更多信息和选项。
+#                       本 APT 具有超级牛力
 # -------------------------------------------------------------------------------------
 # apt-get update
 #   在修改/etc/apt/sources.list或/etc/apt/preferences之后运行该命令。
@@ -76,42 +123,96 @@
 
 
 # ======================================================================================
-# 示例：经典常用命令
+# 示例：查找软件包
 # ======================================================================================
+# 列出已安装的所有软件包
+dpkg -l
+
 # 用于查找新包
 sudo apt-cache
-sudo apt-cache search package_name
-# 安装一个应用
-sudo apt-get install package_name
-# 安装，遇到提示直接 yes
-sudo apt-get install -y package_name
-# 静默安装
-sudo apt-get install -q package_name
-# 安装新的软件包
-sudo apt-get install package_name
-sudo apt-get install package_1 package_2 package_3
+# 搜索软件包
+sudo apt-cache search pkg_name
+# 获取软件包的相关信息, 如说明、大小、版本等
+sudo apt-cache show pkg_name
+# 查看该软件包需要哪些依赖包
+sudo apt-cache depends pkg_name
+# 查看该软件包被哪些包依赖
+sudo apt-cache rdepends pkg_name
 
+# 检查是否有损坏的依赖
+sudo apt-get check
+
+
+
+# ======================================================================================
+# 示例：安装软件包
+# ======================================================================================
+# 安装一个应用
+sudo apt-get install pkg_name
+# 安装，遇到提示直接 yes
+sudo apt-get install -y pkg_name
+# 静默安装，降低日志级别
+sudo apt-get install -q pkg_name
+# 安装新的软件包
+sudo apt-get install pkg_name
+# 安装多个软件包
+sudo apt-get install pkg pkg2 pkg3
+# 通配符安装，安装pkg_name_开头软件包
+sudo apt-get install pkg_name_*
+# 安装指定版本
+sudo apt-get install pkg_name=version
+
+# 重新安装
+sudo apt-get --reinstall install pkg_name
+# 安装源码包所需要的编译环境
+sudo apt-get build-dep pkg_name
+# 修复依赖关系
+sudo apt-get -f install pkg_name
+# 下载软件包的源码
+sudo apt-get source pkg_name
+
+
+
+# ======================================================================================
+# 示例：卸载删除软件包
+# ======================================================================================
 # 卸载删除应用，只删除包的二进制文件。它不会触及配置文件
-sudo apt-get remove package_name
+sudo apt-get remove pkg_name
+# 删除软件包, 同时删除配置文件
+sudo apt-get --purge remove pkg_name
 # 清除包以及配置文件
 # 如果“删除”特定软件并再次安装，系统将具有相同的配置文件。当然，再次安装时，系统会要求您覆盖现有的配置文件。
 # 当你搞砸了程序的配置时，清除特别有用。您希望从系统中完全擦除其痕迹，并且可能重新开始。
-sudo apt-get purge package_name
+sudo apt-get purge pkg_name
 
-#
+# 自动删除没有引用的软件包
 sudo apt-get autoremove
+sudo apt-get autoremove pkg_name
+# 删除软件包, 删除配置文件,  删除不再使用的依赖包
+sudo apt-get --purge autoremove pkg_name
+
+# 清除 已下载的软件包 和 旧软件包
+sudo apt-get clean && sudo apt-get autoclean
+
+
+
+# ======================================================================================
+# 示例：更新软件包源
+# ======================================================================================
 # 升级软件仓库列表
 sudo apt-get update
 
+
+
+# ======================================================================================
+# 示例：升级软件包
+# ======================================================================================
 # 升级应用，不推荐使用
 sudo apt-get upgrade
-# 仅升级特定程序
-sudo apt-get upgrade package_name
+# 更新已安装的软件包（识别并处理依赖关系的改变）
+sudo apt-get dist-upgrade
 
 
-# output:
-#---------------------------------------------------------------------------------------
-#
 
 
 
@@ -129,9 +230,9 @@ sudo apt-get update
 # 更新软件包数据库后，可以用下面的命令升级已安装的软件包
 # ---------------------------------------------------------------------------------------
 # 仅升级特定程序
-sudo apt-get upgrade package_name
+sudo apt-get upgrade pkg_name
 # 安装一个应用
-sudo apt-get install package_name
+sudo apt-get install pkg_name
 
 # 获取 Ubuntu 代号
 lsb_release -a
