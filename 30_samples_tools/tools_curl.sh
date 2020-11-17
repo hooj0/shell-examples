@@ -60,7 +60,7 @@ curl -b 'foo=bar' https://google.com
 # 发送两个 Cookie。
 curl -b 'foo1=bar;foo2=bar2' https://google.com
 
-# 读取本地文件cookies.txt，里面是服务器设置的 Cookie（参见-c参数），将其发送到服务器。
+# 读取本地文件cookies.txt，里面是服务器设置的 Cookie（参见-c参数），将其发送到服务器
 curl -b cookies.txt https://www.google.com
 
 
@@ -91,7 +91,7 @@ curl -d 'login=emma' -d 'password=123' -X POST  https://google.com/login
 # -------------------------------------------------------------------------------
 # -d 参数可以读取本地文本文件的数据，向服务器发送
 # ===============================================================================
-# 读取data.txt文件的内容，作为数据体向服务器发送。
+# 读取data.txt文件的内容，作为数据体向服务器发送
 curl -d '@data.txt' https://google.com/login
 
 
@@ -107,210 +107,155 @@ curl --data-urlencode 'comment=hello world' https://google.com/login
 
 
 # ===============================================================================
-# 示例：
+# 示例：-e
 # -------------------------------------------------------------------------------
-#
+# -e参数用来设置 HTTP 的标头Referer，表示请求的来源
 # ===============================================================================
--e
+# 将Referer标头设为https://google.com?q=example
+curl -e 'https://google.com?q=example' https://www.example.com
 
--e参数用来设置 HTTP 的标头Referer，表示请求的来源。
 
-$ curl -e 'https://google.com?q=example' https://www.example.com
-上面命令将Referer标头设为https://google.com?q=example。
-
--H参数可以通过直接添加标头Referer，达到同样效果。
-
+# -H参数可以通过直接添加标头Referer，达到同样效果
 curl -H 'Referer: https://google.com?q=example' https://www.example.com
 
 
 # ===============================================================================
-# 示例：
+# 示例：-F
 # -------------------------------------------------------------------------------
-#
+# -F参数用来向服务器上传二进制文件
+# -F参数可以指定 MIME 类型
+# -F参数也可以指定文件名
 # ===============================================================================
--F
+# 给 HTTP 请求加上标头Content-Type: multipart/form-data，然后将文件photo.png作为file字段上传
+curl -F 'file=@photo.png' https://google.com/profile
 
--F参数用来向服务器上传二进制文件。
+# 指定 MIME 类型为image/png，否则 curl 会把 MIME 类型设为application/octet-stream
+curl -F 'file=@photo.png;type=image/png' https://google.com/profile
 
-$ curl -F 'file=@photo.png' https://google.com/profile
-上面命令会给 HTTP 请求加上标头Content-Type: multipart/form-data，然后将文件photo.png作为file字段上传。
-
--F参数可以指定 MIME 类型。
-
-$ curl -F 'file=@photo.png;type=image/png' https://google.com/profile
-上面命令指定 MIME 类型为image/png，否则 curl 会把 MIME 类型设为application/octet-stream。
-
--F参数也可以指定文件名。
-
-$ curl -F 'file=@photo.png;filename=me.png' https://google.com/profile
-上面命令中，原始文件名为photo.png，但是服务器接收到的文件名为me.png。
+# 原始文件名为photo.png，但是服务器接收到的文件名为me.png
+curl -F 'file=@photo.png;filename=me.png' https://google.com/profile
 
 
 
 # ===============================================================================
-# 示例：
+# 示例：-G
 # -------------------------------------------------------------------------------
-#
+# -G参数用来构造 URL 的查询字符串
 # ===============================================================================
--G
+# 发出一个 GET 请求，实际请求的 URL 为https://google.com/search?q=kitties&count=20
+# 如果省略--G，会发出一个 POST 请求
+curl -G -d 'q=kitties' -d 'count=20' https://google.com/search
 
--G参数用来构造 URL 的查询字符串。
 
-$ curl -G -d 'q=kitties' -d 'count=20' https://google.com/search
-上面命令会发出一个 GET 请求，实际请求的 URL 为https://google.com/search?q=kitties&count=20。如果省略--G，会发出一个 POST 请求。
-
-如果数据需要 URL 编码，可以结合--data--urlencode参数。
-
-$ curl -G --data-urlencode 'comment=hello world' https://www.example.com
+# 如果数据需要 URL 编码，可以结合--data--urlencode参数
+curl -G --data-urlencode 'comment=hello world' https://www.example.com
 
 
 # ===============================================================================
-# 示例：
+# 示例：-H
 # -------------------------------------------------------------------------------
-#
+# -H参数添加 HTTP 请求的标头
 # ===============================================================================
--H
+# 添加 HTTP 标头Accept-Language: en-US
+curl -H 'Accept-Language: en-US' https://google.com
 
--H参数添加 HTTP 请求的标头。
+# 添加两个 HTTP 标头
+curl -H 'Accept-Language: en-US' -H 'Secret-Message: xyzzy' https://google.com
 
-$ curl -H 'Accept-Language: en-US' https://google.com
-上面命令添加 HTTP 标头Accept-Language: en-US。
-
-$ curl -H 'Accept-Language: en-US' -H 'Secret-Message: xyzzy' https://google.com
-上面命令添加两个 HTTP 标头。
-
-$ curl -d '{"login": "emma", "pass": "123"}' -H 'Content-Type: application/json' https://google.com/login
-上面命令添加 HTTP 请求的标头是Content-Type: application/json，然后用-d参数发送 JSON 数据。
+# 添加 HTTP 请求的标头是Content-Type: application/json，然后用-d参数发送 JSON 数据
+curl -d '{"login": "emma", "pass": "123"}' -H 'Content-Type: application/json' https://google.com/login
 
 
 
 # ===============================================================================
-# 示例：
+# 示例：-i
 # -------------------------------------------------------------------------------
-#
+# -i参数打印出服务器回应的 HTTP 标头
 # ===============================================================================
--i
-
--i参数打印出服务器回应的 HTTP 标头。
-
-$ curl -i https://www.example.com
-上面命令收到服务器回应后，先输出服务器回应的标头，然后空一行，再输出网页的源码。
+# 收到服务器回应后，先输出服务器回应的标头，然后空一行，再输出网页的源码
+curl -i https://www.example.com
 
 
 
 # ===============================================================================
-# 示例：
+# 示例：-I
 # -------------------------------------------------------------------------------
-#
+# -I参数向服务器发出 HEAD 请求，然会将服务器返回的 HTTP 标头打印出来
 # ===============================================================================
--I
+# 输出服务器对 HEAD 请求的回应
+curl -I https://www.example.com
 
--I参数向服务器发出 HEAD 请求，然会将服务器返回的 HTTP 标头打印出来。
-
-$ curl -I https://www.example.com
-上面命令输出服务器对 HEAD 请求的回应。
-
---head参数等同于-I。
-
-$ curl --head https://www.example.com
+# --head 参数等同于-I
+curl --head https://www.example.com
 
 
 # ===============================================================================
-# 示例：
+# 示例：-k
 # -------------------------------------------------------------------------------
-#
+# -k参数指定跳过 SSL 检测
 # ===============================================================================
--k
-
--k参数指定跳过 SSL 检测。
-
-$ curl -k https://www.example.com
-上面命令不会检查服务器的 SSL 证书是否正确。
+# 不会检查服务器的 SSL 证书是否正确
+curl -k https://www.example.com
 
 
 
 # ===============================================================================
-# 示例：
+# 示例：-L
 # -------------------------------------------------------------------------------
-#
+# -L参数会让 HTTP 请求跟随服务器的重定向。curl 默认不跟随重定向
 # ===============================================================================
--L
-
--L参数会让 HTTP 请求跟随服务器的重定向。curl 默认不跟随重定向。
-
-$ curl -L -d 'tweet=hi' https://api.twitter.com/tweet
+curl -L -d 'tweet=hi' https://api.twitter.com/tweet
 
 
 # ===============================================================================
-# 示例：
+# 示例：--limit-rate
 # -------------------------------------------------------------------------------
-#
+# --limit-rate 用来限制 HTTP 请求和回应的带宽，模拟慢网速的环境
 # ===============================================================================
---limit-rate
-
---limit-rate用来限制 HTTP 请求和回应的带宽，模拟慢网速的环境。
-
-$ curl --limit-rate 200k https://google.com
-上面命令将带宽限制在每秒 200K 字节。
+# 将带宽限制在每秒 200K 字节
+curl --limit-rate 200k https://google.com
 
 
 
 # ===============================================================================
-# 示例：
+# 示例：-o
 # -------------------------------------------------------------------------------
-#
+# -o参数将服务器的回应保存成文件，等同于wget命令
 # ===============================================================================
--o
-
--o参数将服务器的回应保存成文件，等同于wget命令。
-
-$ curl -o example.html https://www.example.com
-上面命令将www.example.com保存成example.html。
+# 将www.example.com保存成example.html
+curl -o example.html https://www.example.com
 
 
 
 # ===============================================================================
-# 示例：
+# 示例：-O
 # -------------------------------------------------------------------------------
-#
+# -O参数将服务器回应保存成文件，并将 URL 的最后部分当作文件名
 # ===============================================================================
--O
-
--O参数将服务器回应保存成文件，并将 URL 的最后部分当作文件名。
-
-$ curl -O https://www.example.com/foo/bar.html
-上面命令将服务器回应保存成文件，文件名为bar.html。
+# 将服务器回应保存成文件，文件名为bar.html
+curl -O https://www.example.com/foo/bar.html
 
 
 
 # ===============================================================================
-# 示例：
+# 示例：-s
 # -------------------------------------------------------------------------------
-#
+# -s参数将不输出错误和进度信息
 # ===============================================================================
--s
+# 命令一旦发生错误，不会显示错误信息。不发生错误的话，会正常显示运行结果
+curl -s https://www.example.com
 
--s参数将不输出错误和进度信息。
-
-$ curl -s https://www.example.com
-上面命令一旦发生错误，不会显示错误信息。不发生错误的话，会正常显示运行结果。
-
-如果想让 curl 不产生任何输出，可以使用下面的命令。
-
-$ curl -s -o /dev/null https://google.com
+# 如果想让 curl 不产生任何输出，可以使用下面的命令
+curl -s -o /dev/null https://google.com
 
 
 # ===============================================================================
-# 示例：
+# 示例：-S
 # -------------------------------------------------------------------------------
-#
+# -S 参数指定只输出错误信息，通常与-s一起使用
 # ===============================================================================
--S
-
--S参数指定只输出错误信息，通常与-s一起使用。
-
-$ curl -S -s -o /dev/null https://google.com
-上面命令没有任何输出，除非发生错误。
+# 没有任何输出，除非发生错误
+curl -S -s -o /dev/null https://google.com
 
 
 
