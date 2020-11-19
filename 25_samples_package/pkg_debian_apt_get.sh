@@ -304,6 +304,12 @@ sudo apt-get update
 
 # ======================================================================================
 # 示例：添加PPA 更新安装软件
+# --------------------------------------------------------------------------------------
+# 四个主要存储库是：
+#   Main – 规范支持的免费开源软件
+#   Universe - 社区维护的免费和开源软件
+#   Restricted – 设备的专有驱动程序
+#   Multiverse – 受版权或法律问题限制的软件
 # ======================================================================================
 # 列出添加在系统中的 PPA 存储库
 apt policy
@@ -314,6 +320,7 @@ ls /etc/apt/sources.list.d
 # 将 PPA 存储库添加到系统以从中下载软件
 # --------------------------------------------------------------------------------------
 sudo add-apt-repository ppa:ppa_name
+sudo add-apt-repository ppa:user/ppa-name
 
 # 更新软件列表
 sudo apt update
@@ -325,7 +332,7 @@ sudo apt install package_name
 
 # 从系统中删除添加的 PPA 存储库
 # --------------------------------------------------------------------------------------
-sudo add-apt-repository –remove ppa:ppa_name
+sudo add-apt-repository --remove ppa:ppa_name
 
 sudo add-apt-repository --remove ppa:thomas-schiex/blender
 
