@@ -301,4 +301,47 @@ sudo gedit /etc/apt/sources.list
 # 更新软件列表和升级
 sudo apt-get update
 
+
+# ======================================================================================
+# 示例：添加PPA 更新安装软件
+# ======================================================================================
+# 列出添加在系统中的 PPA 存储库
+apt policy
+
+# 通过系统目录，查看已添加的 PPA 存储库
+ls /etc/apt/sources.list.d
+
+# 将 PPA 存储库添加到系统以从中下载软件
+# --------------------------------------------------------------------------------------
+sudo add-apt-repository ppa:ppa_name
+
+# 更新软件列表
+sudo apt update
+sudo apt-get update
+
+# 从添加的存储库中安装所需的软件包
+sudo apt install package_name
+
+
+# 从系统中删除添加的 PPA 存储库
+# --------------------------------------------------------------------------------------
+sudo add-apt-repository –remove ppa:ppa_name
+
+sudo add-apt-repository --remove ppa:thomas-schiex/blender
+
+# 清除存储库
+# --------------------------------------------------------------------------------------
+# 可以利用第三方工具 PPA Purge 完成清除操作
+sudo apt-get install ppa-purge
+
+# 可以使用以下命令语法清除添加的存储库：
+ppa-purge ppa:ppa_name
+ppa-purge ppa:thomas-schiex/blender
+
+# 手动删除存储库
+# 使用 rm 命令从该目录中手动删除 PPA：
+sudo rm /etc/apt/sources.list.d/thomas-schiex-ubuntu-blender-bionic.list
+
+
+
 read exits
