@@ -145,6 +145,10 @@ sudo apt-cache rdepends pkg_name
 # 检查是否有损坏的依赖
 sudo apt-get check
 
+# 列出软件的所有来源
+sudo apt-cache madison package
+
+
 
 
 # ======================================================================================
