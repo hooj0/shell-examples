@@ -52,6 +52,11 @@
 # [install]
 # trusted-host = mirrors.aliyun.com
 # --------------------------------------------------------------------------
+# 查看 pip 安装包位置
+#   python -m site
+# 多个版本pip和python 可以利用python固定版本
+#   python -m pip install package
+# --------------------------------------------------------------------------
 
 
 
@@ -65,6 +70,9 @@ pip install --user python-dateutil
 sudo pip install --upgrade python-dateutil
 # 安装不使用缓存
 sudo pip install --no-cache-dir python-dateutil
+
+# 多个版本pip和python 可以利用python固定版本
+python3.7 -m pip install python-dateutil
 
 # output:
 # --------------------------------------------------------------------------
