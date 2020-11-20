@@ -146,7 +146,10 @@ sudo apt-cache rdepends pkg_name
 sudo apt-get check
 
 # 列出软件的所有来源
-sudo apt-cache madison package
+sudo apt-cache madison pkg_name
+sudo apt-cache policy pkg_name
+# 详细列出软件的所有来源
+sudo apt-cache showpkg pkg_name
 
 
 
@@ -154,6 +157,8 @@ sudo apt-cache madison package
 # ======================================================================================
 # 示例：安装软件包
 # ======================================================================================
+# 模拟安装软件
+sudo apt-get install -s pkg_name
 # 安装一个应用
 sudo apt-get install pkg_name
 # 安装，遇到提示直接 yes
