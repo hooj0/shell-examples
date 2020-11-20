@@ -368,7 +368,6 @@ sudo apt install package_name
 # 从系统中删除添加的 PPA 存储库
 # --------------------------------------------------------------------------------------
 sudo add-apt-repository --remove ppa:ppa_name
-
 sudo add-apt-repository --remove ppa:thomas-schiex/blender
 
 # 清除存储库
