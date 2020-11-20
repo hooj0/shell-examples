@@ -121,6 +121,18 @@
 #   假如您的需求十分迫切，能够使用apt-get clean以释放更多空间。这个命令会将已安装软件包裹的.deb文档一并删除。
 #   大多数情况下您不会再用到这些.debs文档，因此假如您为磁盘空间不足而感到焦头烂额，这个办法也许值得一试。
 # -------------------------------------------------------------------------------------
+# apt-get相关的目录
+#
+# 文件的内容是软件包的描述信息, 该软件包括当前系统所使用的 ubunt 安装源中的所有软件包
+# 其中包括当前系统中已安装的和未安装的软件包
+#   /var/lib/dpkg/available
+# 目录是在用 apt-get install 安装软件时，软件包的临时存放路径
+#   /var/cache/apt/archives
+# 存放的是软件源站点
+#   /etc/apt/sources.list
+# 使用apt-get update命令会从/etc/apt/sources.list中下载软件列表，并保存到该目录
+#   /var/lib/apt/lists
+# -------------------------------------------------------------------------------------
 
 
 
@@ -137,6 +149,8 @@ sudo apt-cache
 sudo apt-cache search pkg_name
 # 获取软件包的相关信息, 如说明、大小、版本等
 sudo apt-cache show pkg_name
+# 或者
+sudo dpkg -l pkg_name
 # 查看该软件包需要哪些依赖包
 sudo apt-cache depends pkg_name
 # 查看该软件包被哪些包依赖
@@ -151,12 +165,24 @@ sudo apt-cache policy pkg_name
 # 详细列出软件的所有来源
 sudo apt-cache showpkg pkg_name
 
+# 列出软件所有版本，并查看是否已经安装
+sudo apt-get install apt-show-versions
+sudo apt-show-versions -a pkg_name
+
+# 查询是否有升级版本
+apt-show-versions -u pkg_name
 
 
 
 # ======================================================================================
 # 示例：安装软件包
 # ======================================================================================
+# 显示已安装包的详情
+dpkg -s package
+
+# 或者
+sudo dpkg-query -s package
+
 # 模拟安装软件
 sudo apt-get install -s pkg_name
 # 安装一个应用
