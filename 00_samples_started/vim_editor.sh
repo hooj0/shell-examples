@@ -80,7 +80,7 @@ vim -M file         以只读的方式打开文件，不可以强制保存
 vim -y num file     将编辑窗口的大小设为 num 行
 vim + file          从文件的末尾开始
 vim +num file       从第num行开始
-vim +/string file   打开 file，并将光标停留在第一个找到的 string 上
+vim +/string file   打开 file 并将光标停留在第一个找到的 string 上
 vim --remote file   用已有的 vim 进程打开指定的文件,  如果你不想启用多个 vim 会话，这个很有用
                     但要注意， 如果你用 vim 会寻找名叫 VIM 的服务器
                     如果你已经有一个 gvim 在运行了
