@@ -114,7 +114,7 @@ ZZ              保存并退出
             如果是 gvim，则会打开一个图形界面的浏览窗口
             实际上 :browse 后可以跟任何编辑文档的命令，如 sp 等
 
-# 用browse打开的起始目录可以由browsedir来设置：
+# 用 browse 打开的起始目录可以由 browsedir 来设置：
 :set browsedir=last     用上次访问过的目录（默认）
 :set browsedir=buffer   用当前文件所在目录
 :set browsedir=current  用当前工作目录
