@@ -131,5 +131,13 @@ wget --spider http://www.xxx.cn/readMe.txt
 wget –user-agent=”Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.204 Safari/534.16″  http://www.xxx.cn/readMe.txt
 
 
+# =============================================================================
+# 示例：增加重试次数
+# =============================================================================
+# 如果网络有问题或下载一个大文件也有可能失败
+# wget默认重试20次连接下载文件。如果需要，你可以使用–tries增加重试次数
+wget –tries=40 http://www.xxx.cn/readMe.txt
+
+
 
 read exits
