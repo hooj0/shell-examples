@@ -125,4 +125,11 @@ wget --spider http://www.xxx.cn/readMe.txt
 
 
 
+# =============================================================================
+# 示例：设置user-agent
+# =============================================================================
+wget –user-agent=”Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.204 Safari/534.16″  http://www.xxx.cn/readMe.txt
+
+
+
 read exits
