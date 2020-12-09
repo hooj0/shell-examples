@@ -102,6 +102,14 @@ wget --limit-rate=300k http://www.xxx.cn/readMe.txt
 # 对于下载大文件时突然由于网络等原因中断非常有帮助，可以继续接着下载而不是重新下载一个文件
 wget -c http://www.xxx.cn/readMe.txt
 
+# output:
+# -----------------------------------------------------------------------------
+# Continuing in background, pid 1840.
+# Output will be written to `wget-log’.
+
+# 可以使用以下命令来察看下载进度
+tail -f wget-log
+
 
 
 # =============================================================================
