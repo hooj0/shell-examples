@@ -53,6 +53,42 @@
 #    -V：显示版本信息
 #    --passive-ftp：使用被动模式PASV连接FTP服务器
 #    --follow-ftp：从HTML文件中下载FTP连接文件
+#
+#   -e,–execute=COMMAND 执行一个 “.wgetrc”命令
+#
+#   -o,–output-file=FILE 将软件输出信息保存到文件；
+#   -a,–append-output=FILE将软件输出信息追加到文件；
+#   -d,–debug显示输出信息；
+#   -q,–quiet 不显示输出信息；
+#   -i,–input-file=FILE 从文件中取得URL；
+#
+#   -t,–tries=NUMBER 是否下载次数（0表示无穷次）
+#   -O –output-document=FILE下载文件保存为别的文件名
+#   -nc, –no-clobber 不要覆盖已经存在的文件
+#   -N,–timestamping只下载比本地新的文件
+#   -T,–timeout=SECONDS 设置超时时间
+#   -Y,–proxy=on/off 关闭代理
+#
+#   -nd,–no-directories 不建立目录
+#   -x,–force-directories 强制建立目录
+#
+#   –http-user=USER设置HTTP用户
+#   –http-passwd=PASS设置HTTP密码
+#   –proxy-user=USER设置代理用户
+#   –proxy-passwd=PASS设置代理密码
+#
+#   -r,–recursive 下载整个网站、目录（小心使用）
+#   -l,–level=NUMBER 下载层次
+#
+#   -A,–accept=LIST 可以接受的文件类型
+#   -R,–reject=LIST拒绝接受的文件类型
+#   -D,–domains=LIST可以接受的域名
+#   –exclude-domains=LIST拒绝的域名
+#   -L,–relative 下载关联链接
+#   –follow-ftp 只下载FTP链接
+#   -H,–span-hosts 可以下载外面的主机
+#   -I,–include-directories=LIST允许的目录
+#   -X,–exclude-directories=LIST 拒绝的目录
 # -----------------------------------------------------------------------------
 
 
