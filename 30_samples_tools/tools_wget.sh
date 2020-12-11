@@ -243,7 +243,7 @@ wget -r -A.pdf http://www.xxx.cn
 # =============================================================================
 # wget 匿名 ftp 下载
 
-wget ftp-url
+wget ftp-urll
 
 # 使用 wget 用户名和密码认证的 ftp 下载
 wget –ftp-user=USERNAME –ftp-password=PASSWORD ftp://www.xxx.cn/
